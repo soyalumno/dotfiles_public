@@ -1,0 +1,117 @@
+## lazy
+## unite
+#[[plugins]]
+#repo = 'Shougo/unite.vim'
+#hook_add = '''
+# " insert modeで開始
+# let g:unite_enable_start_insert=1
+# let g:unite_source_history_yank_enable =1
+# let g:unite_source_file_mru_limit = 1000
+# "nnoremap <silent> fy :<C-u>Unite history/yank<CR>
+# "nnoremap <silent> fb :<C-u>Unite buffer<CR>
+# " nnoremap <silent> ff :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+# nnoremap <silent> fr :<C-u>Unite -buffer-name=register register<CR>
+# "nnoremap <silent> fm :<C-u>Unite file_mru buffer<CR>
+#'''
+#
+#[[plugins]]
+#repo = 'Shougo/unite-outline'
+#depends = ['Shougo/unite.vim']
+#hook_add = '''
+# nnoremap <silent> tr :<C-u>Unite -no-quit -vertical -winwidth=35 outline<CR>
+#'''
+#
+## resize
+#[[plugins]]
+#repo = 'simeji/winresizer'
+#hook_add = '''
+# let g:winresizer_vert_resize=1
+# let g:winresizer_horiz_resize=1
+# let g:winresizer_start_key='<C-t>'
+#'''
+#
+## LSP
+#[[plugins]]
+#repo = 'prabirshrestha/vim-lsp'
+#hook_add = '''
+# let g:lsp_diagnostics_enabled = 1
+# let g:lsp_diagnostics_echo_cursor = 1
+# let g:lsp_diagnostics_echo_delay = 200
+# let g:asyncomplete_auto_popup = 1
+# let g:asyncomplete_auto_completeopt = 0
+# let g:asyncomplete_popup_delay = 200
+# let g:lsp_text_edit_enabled = 0
+#'''
+#
+#[[plugins]]
+#repo = 'prabirshrestha/async.vim'
+#depends = ['prabirshrestha/vim-lsp']
+#
+#[[plugins]]
+#repo = 'prabirshrestha/asyncomplete.vim'
+#depends = ['prabirshrestha/vim-lsp']
+#
+#[[plugins]]
+#repo = 'prabirshrestha/asyncomplete-lsp.vim'
+#depends = ['prabirshrestha/vim-lsp']
+#
+#[[plugins]]
+#repo = 'mattn/vim-lsp-settings'
+#depends = ['prabirshrestha/vim-lsp']
+#
+#[[plugins]]
+#repo = 'thomasfaingnaert/vim-lsp-snippets'
+#depends = ['prabirshrestha/vim-lsp']
+#
+#[[plugins]]
+#repo = 'thomasfaingnaert/vim-lsp-ultisnips'
+#depends = ['prabirshrestha/vim-lsp']
+#
+#[[plugins]]
+#repo = 'honza/vim-snippets'
+#[[plugins]]
+#repo = 'SirVer/ultisnips'
+#hook_add = '''
+#let g:UltiSnipsExpandTrigger="<tab>"
+#let g:UltiSnipsJumpForwardTrigger="<c-n>"
+#let g:UltiSnipsJumpBackwardTrigger="<c-p>"
+#'''
+#[[plugins]]
+#repo = 'pangloss/vim-javascript'
+#hook_add = '''
+#  let g:javascript_plusgin_jsdoc = 1
+#  augroup javascript_folding
+#    au!
+#    au FileType javascript setlocal foldmethod=syntax
+#  augroup END
+#'''
+#
+## cursor
+#[[plugins]]
+#repo = 'easymotion/vim-easymotion'
+#
+## comment
+#[[plugins]]
+#repo = 'scrooloose/nerdcommenter'
+#hook_add = '''
+# let g:NERDCreateDefaultMappings = 0
+# let NERDSpaceDelims = 1
+# nmap <space>/ <plug>NERDCommenterToggle
+# vmap <space>/ <plug>NERDCommenterToggle
+#'''
+#
+## emmet
+#[[plugins]]
+#repo = 'mattn/emmet-vim'
+#hook_add = '''
+# let g:user_emmet_mode='n'    "only enable normal mode functions.
+# let g:user_emmet_install_global = 0
+# autocmd FileType html,css,php EmmetInstall
+#'''
+#
+## csv
+#[[plugins]]
+#repo = 'mechatroner/rainbow_csv'
+#on_ft = ['csv']
+#
+#
